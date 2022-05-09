@@ -1,0 +1,78 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  font-size: 62.5%; /* 1 rem = 10px, to usando rem por questões de acessibilidade*/
+
+  --red-text: hsla(0, 65%, 47%, 0.5);
+  --button-background: hsla(0, 94%, 49%, 1);
+  --button-text: hsla(0, 0%, 100%, 1);
+  --light-black-text: hsla(0, 0%, 0%, 0.5);
+  --border-text: hsla(0, 0%, 0%, 1);
+  --product-description: hsla(0, 0%, 0%, 0.61);
+  --product-price: hsla(0, 0%, 0%, 0.74);
+  --product-payment: hsla(0, 0%, 0%, 0.58);
+  --divisor: hsla(0, 6%, 59%, 0.73);
+
+
+}
+
+body{
+  font-size: 1.6rem;
+  width: 37.5rem;
+  margin-inline: auto;
+}
+
+h5{
+  font-family: 'Kanit';
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+
+  color: var(--red-text);
+  
+}
+
+h1{
+  font-family: 'Kanit';
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+
+  color: var(--light-black-text);
+
+}
+
+h3{
+  font-family: 'Kanit';
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+
+  color: var(--red-text);
+  
+}
+
+h2{
+  font-family: 'Kanit';
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: var(--red-text);
+}
+
+h4{
+  font-family: 'Roboto';
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-align: center;
+
+  
+
+}
+
+
