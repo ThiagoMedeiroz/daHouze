@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100&display=swap');
 
-.login{
-    
+body.login{
+  font-size: 40px;
 }
 
 .cadastro{
