@@ -4,37 +4,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login/Cadastro</title>
-    <link rel="stylesheet" href="/public/style/cadastro.css">
+    <link rel="stylesheet" href="style/cadastro.css">
   </head>
 <!-- COLOCAR O HEADER AQUI COMO UMA PARTIALS -->
 <body>
- <div class="Login">
-    <p>Já sou cadastrado</p>
+ <div class="login">
+    <div class="JSC">
+     <p>Já sou cadastrado</p>
+  </div>
   <form action="/" method="POST">
-    <div>
+    <div class="email">
       <label for="email">E-mail:</label>
       <input type="email" id="email" name="email">
     </div>
 
-    <div>
+    <div class="senha">
       <label for="password">Senha:</label>
       <input type="password" id="password" name="password">
     </div>
-      <div>
+      <div class="checkbox">
         <input type="checkbox">
       </div>
-
-    <button type="submit">Entrar</button>
+    <div class="checkboxr">
+       <p>Relembre-me</p>
+    </div>
+    
+    <div class="entrar">
+      <button type="submit">Entrar</button>
+    </div>
   </form>
  </div>
-   <div>
+   <div class="EMS">
     <a href="Esqueci minha senha?">Esqueci minha senha?</a>
    </div>
 
  <div class="cadastro">
     <p>Não sou cadastrado</p>
   <form action="/" method="POST">
-    <div>
+    </form>
+ </div>
+    <div class="email2">
       <label for="email">E-mail:</label>
       <input type="email" id="email" name="email">
     </div>
@@ -42,7 +51,7 @@
     <div>
       <label for="password">Senha:</label>
       <input type="password" id="password" name="password">
-    </div>
+    </div> 
 
     <div>
         <label for="password">Confirmar senha:</label>
