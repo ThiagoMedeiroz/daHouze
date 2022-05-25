@@ -6,44 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DaHouze - A casa da SmartTV</title>
 
-    <link rel="stylesheet" href="/style/home.css">
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500&family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
+
+    <link rel="stylesheet" href="/style/home.css" />
   </head>
   <!-- COLOCAR O HEADER AQUI COMO UMA PARTIALS -->
   <body>
     <header>
       <nav class="scroll">
-        <div class="nav-bar">
-          <div class="homepage">
-            <a href="#" class="logo">
-              <img
-                src="../public/images/logo/dahouze-logo.png"
-                alt="Logo daHouze"
-              />
-            </a>
-          </div>
-          <div class="search-container">
-            <input
-              type="text"
-              placeholder="Busque por produtos..."
-              name="search"
+        <div class="homepage">
+          <a href="#" class="logo">
+            <img src="/images/logo/dahouze-logo.png" alt="Logo DaHouze" />
+          </a>
+        </div>
+        <form class="search-container">
+          <input
+            class="search-container"
+            type="search"
+            placeholder="Busque por produtos..."
+            name="search"
+          />
+        </form>
+        <div class="menu">
+          <svg
+            width="45"
+            height="45"
+            viewBox="0 0 45 45"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M1.60714 39.0714H43.3929C43.6865 39.0714 43.9681 39.1881 44.1757 39.3957C44.3834 39.6033 44.5 39.8849 44.5 40.1786V43.3929C44.5 43.6865 44.3834 43.9681 44.1757 44.1757C43.9681 44.3834 43.6865 44.5 43.3929 44.5H1.60714C1.31351 44.5 1.0319 44.3834 0.824275 44.1757C0.616645 43.9681 0.5 43.6865 0.5 43.3929V40.1786C0.5 39.8849 0.616645 39.6033 0.824275 39.3957C1.0319 39.1881 1.31351 39.0714 1.60714 39.0714ZM1.60714 26.2143H43.3929C43.6865 26.2143 43.9681 26.3309 44.1757 26.5386C44.3834 26.7462 44.5 27.0278 44.5 27.3214V30.5357C44.5 30.8293 44.3834 31.111 44.1757 31.3186C43.9681 31.5262 43.6865 31.6429 43.3929 31.6429H1.60714C1.31351 31.6429 1.0319 31.5262 0.824275 31.3186C0.616645 31.111 0.5 30.8293 0.5 30.5357V27.3214C0.5 27.0278 0.616645 26.7462 0.824275 26.5386C1.0319 26.3309 1.31351 26.2143 1.60714 26.2143ZM1.60714 13.3571H43.3929C43.6865 13.3571 43.9681 13.4738 44.1757 13.6814C44.3834 13.889 44.5 14.1707 44.5 14.4643V17.6786C44.5 17.9722 44.3834 18.2538 44.1757 18.4614C43.9681 18.6691 43.6865 18.7857 43.3929 18.7857H1.60714C1.31351 18.7857 1.0319 18.6691 0.824275 18.4614C0.616645 18.2538 0.5 17.9722 0.5 17.6786V14.4643C0.5 14.1707 0.616645 13.889 0.824275 13.6814C1.0319 13.4738 1.31351 13.3571 1.60714 13.3571ZM1.60714 0.5H43.3929C43.6865 0.5 43.9681 0.616645 44.1757 0.824275C44.3834 1.0319 44.5 1.31351 44.5 1.60714V4.82143C44.5 5.11506 44.3834 5.39667 44.1757 5.6043C43.9681 5.81193 43.6865 5.92857 43.3929 5.92857H1.60714C1.31351 5.92857 1.0319 5.81193 0.824275 5.6043C0.616645 5.39667 0.5 5.11506 0.5 4.82143V1.60714C0.5 1.31351 0.616645 1.0319 0.824275 0.824275C1.0319 0.616645 1.31351 0.5 1.60714 0.5Z"
+              fill="black"
+              stroke="black"
             />
-            <button type="submit">
-              <img
-                src="../public/images/icons/search-icon.png"
-                alt="Pesquisar"
-              />
-            </button>
-          </div>
-          <div class="menu">
-            <img src="../public/images/icons/menu-icon.png" alt="Menu" />
-          </div>
+          </svg>
         </div>
       </nav>
     </header>
