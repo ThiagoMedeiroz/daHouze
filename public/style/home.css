@@ -48,6 +48,8 @@ html, body {
 
 body{
   font-size: 1.6rem;
+
+  overflow: overlay;
 }
 
 /*---- base HEADER------*/
@@ -156,7 +158,20 @@ header button {
 }
   
 /*---MENU celular ---*/
-body.menu-open {
+.menu,
+.close-menu,
+body.menu-expanded .open-menu {
+  opacity: 0;
+  visibility: hidden;
+}
+
+body.menu-expanded .menu,
+body.menu-expanded .close-menu{
+  opacity: 1;
+  visibility: visible;
+}
+
+body.menu-expanded {
   overflow: hidden;
 }
 
@@ -164,24 +179,10 @@ body.menu-open > :not(header) {
   display: none;
 }
 
-.menu,
-.close,
-body.menu-open .open {
-  opacity: 0;
-  visibility: hidden;
-}
-
-body.menu-open .menu,
-body.menu-open .close{
-  opacity: 1;
-  visibility: visible;
-}
-
-body.menu-open .menu {
+body.menu-expanded .menu{
   position: fixed;
   top: 0;
   left: 0;
-
   background: var(--grey-back);
 
   width: 100vw;
@@ -190,21 +191,12 @@ body.menu-open .menu {
   padding-top: var(--nav-height);
 }
 
-body.menu-open header {
+body.menu-expanded header {
   position: relative;
 }
 
-
-.social-links {
+.menu ul:nth-child(1) {
   display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-
-  margin-top: 4rem;
-}
-
-.shortcuts {
-  display : flex;
   flex-direction: column;
   align-items: center;
   gap: 3rem;
@@ -218,15 +210,24 @@ body.menu-open header {
 }
 
 .menu ul li a {
-  color: var(--light-black-text);
   text-decoration: none;
+  color: var(--light-black-text);
 }
 
-body.menu-open .homepage,
-body.menu-open .search-container {
-  position: relative;
-  z-index: 100;
+.social-links {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4rem;
+}
 
+body.menu-expanded .homepage,
+body.menu-expanded .search-container,
+body.menu-expanded button {
+  position: relative;
+  z-index: 10;
+  
 }
 
 
