@@ -163,12 +163,16 @@ header button {
 body.menu-expanded .open-menu {
   opacity: 0;
   visibility: hidden;
+
+  
 }
 
 body.menu-expanded .menu,
 body.menu-expanded .close-menu{
   opacity: 1;
   visibility: visible;
+
+  
 }
 
 body.menu-expanded {
@@ -189,6 +193,7 @@ body.menu-expanded .menu{
   height: 100vh;
 
   padding-top: var(--nav-height);
+  
 }
 
 body.menu-expanded header {
@@ -227,7 +232,7 @@ body.menu-expanded .search-container,
 body.menu-expanded button {
   position: relative;
   z-index: 10;
-  
+  max-width: 37.5rem;
 }
 
 
@@ -532,4 +537,54 @@ button.buy{
   align-items: center;
 
   margin: 2rem;
+}
+
+
+/*------- FOOTER --------*/
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  height: 6rem;
+
+  padding: 0.5rem;
+  margin: 0 1.5rem;
+  margin-top: 4rem;
+}
+
+.footer img {
+  width: auto;
+  max-height: 6rem;
+
+  padding: 0.5rem;
+}
+
+p.copyright {
+  font-family: 'Roboto';
+  font-size: 0.8rem;
+  font-weight: 400;
+
+  text-align: justify;
+  text-justify: distribute;
+
+  color: var(--product-payment);
+
+  margin-left: 2rem;
+}
+
+.socials-footer svg {
+  width: auto;
+  max-height: 1rem;
+
+  margin: 1rem;
+}
+
+.socials-footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
