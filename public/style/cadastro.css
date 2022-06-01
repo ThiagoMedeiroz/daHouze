@@ -38,8 +38,7 @@
  
   
  #loginCadastro{
-     padding-top: 6rem;
-     margin: 1.5rem;
+     padding: 6rem 1.5rem;
      margin-top: var(--nav-height);
      display: flex;
      flex-direction: column;
