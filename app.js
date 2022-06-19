@@ -4,6 +4,7 @@ const app = express()
 const loginRouter = require('./routers/Login')
 const homeRouter = require('./routers/Home')
 const categoriesRouter = require('./routers/Categories')
+const finalizacaoRouter = require('./routers/Finalizacao')
 
 app.set('view engine', 'ejs')
 app.set('views', path.join(__dirname, 'views'))
@@ -12,6 +13,8 @@ app.use(express.json())
 app.use(loginRouter)
 app.use(homeRouter)
 app.use(categoriesRouter)
+app.use(finalizacaoRouter)
+
 // app.get('/', (req, res) => {
 //     res.render('home')
 //   })

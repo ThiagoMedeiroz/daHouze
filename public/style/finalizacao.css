@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  ul{
+    list-style: none;
+  }
+  
+  /* Variables*/
+  
+  :root{
+    font-size: 62.5%; /* 1 rem = 10px, to usando rem por questões de acessibilidade*/
+  
+    --red-text: hsla(0, 65%, 47%, 0.5);
+    --button-background: hsla(0, 94%, 49%, 1);
+    --button-text: hsla(0, 0%, 100%, 1);
+    --light-black-text: hsla(0, 0%, 0%, 0.5);
+    --border-text: hsla(0, 0%, 0%, 1);
+    --product-description: hsla(0, 0%, 0%, 0.61);
+    --product-price: hsla(0, 0%, 0%, 0.74);
+    --product-payment: hsla(0, 0%, 0%, 0.58);
+    --divisor: hsla(0, 6%, 59%, 0.73);
+    --grey-back: hsla(0, 0%, 60%, 1);
+    --shadow: hsla(0, 0%, 80%, 1);
+    --header-shadow: rgba(0, 0, 0, 0.25);
+
+  
+  
+    --nav-height: 6rem;
+  }
+  
+  html, body {
+    width: 100%;
+    height: 100%;
+  }
+ 
+  #dados{
+    padding: 6rem 1.5rem;
+    margin-top: var(--nav-height);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+} 
+
+.DP{
+    font-family: 'Kanit';
+    font-weight: 900;
+}
+
+.JPC{
+    font-family: 'Kanit';
+    font-style: normal;
+    font-weight: 400;
+}
+
+
+
+.indent{
+    background-color: var(--button-background);
+    border: none;
+    border-radius: 0.5rem;
+    width: 14rem;
+    height: 4rem;
+    color: var(--button-text);
+    cursor: pointer;
+    font-family: "Kanit";
+    font-size: 1.6rem;
+    font-weight: 500;
+
+  }
+
