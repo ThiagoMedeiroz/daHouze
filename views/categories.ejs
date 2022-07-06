@@ -1,12 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>TESTE</h1>
-</body>
+  <head>
+    <%- include('partials/head') %>
+
+    <link rel="stylesheet" href="style/categories.css" />
+    <link rel="stylesheet" href="style/header.css" />
+    <link rel="stylesheet" href="style/footer.css" />
+  </head>
+  <body>
+    <%- include('partials/header') %>
+    <main class="content">
+      <section class="brandBox" id="allBrands">
+        <div class="brands">
+          <div class="brandText">
+            <h3>Marcas</h3>
+          </div>
+          <div class="selection">
+            <ul class="boxes">
+              <li><a href="#">Samsung</a></li>
+              <li><a href="#">Panasonic</a></li>
+              <li><a href="#">Philco</a></li>
+              <li><a href="#">Philips</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="offers" id="onSale">
+        <div class="saleBox">
+          <div class="saleText">
+            <h2>SmartTv's</h2>
+          </div>
+          <div class="product">
+            <img
+              src="/images/products-images/Smart Tv 43 UHD Samsung 4k 43AU7700.png"
+              alt="Smart Tv 43 polegadas UHD Samsung 4k 43AU7700"
+            />
+            <h4 class="description">Smart Tv 43" UHD Samsung 4k 43AU7700</h4>
+            <p class="price">
+              <br />
+              de R$ 2.499,99 <br />por R$ 2.399,99
+            </p>
+            <p class="payment">à Vista</p>
+            <div class="buyBox">
+              <button class="buy">Comprar</button>
+            </div>
+          </div>
+          <div class="product">
+            <img
+              src="/images/products-images/Smart TV LED 32” TCL S5200 HD HDR.png"
+              alt="Smart TV LED 32 polegadas TCL S5200 HD HDR"
+            />
+            <h4 class="description">Smart TV LED 32" TCL S5200 HD HDR</h4>
+            <p class="price">
+              <br />
+              R$ 1.399,99
+            </p>
+            <p class="payment">até 10x de R$ 139,99</p>
+            <div class="buyBox">
+              <button class="buy">Comprar</button>
+            </div>
+          </div>
+          <div class="product">
+            <img
+              src="/images/products-images/TV LED 39'' Philco PTV39G50D.png"
+              alt="TV LED 39 polegadas Philco PTV39G50D Resolução HD"
+            />
+            <h4 class="description">
+              TV LED 39" Philco PTV39G50D Resolução HD
+            </h4>
+            <p class="price">
+              <br />
+              de R$ 1.299,99 <br />por R$ 1.199,99
+            </p>
+            <p class="payment">até 10x de R$ 119,99</p>
+            <div class="buyBox">
+              <button class="buy">Comprar</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <%- include('partials/footer') %>
+  </body>
 </html>
