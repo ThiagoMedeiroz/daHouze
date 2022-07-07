@@ -1,1 +1,76 @@
-teste
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('partials/head') %>
+
+    <link rel="stylesheet" href="style/cart.css" />
+    <link rel="stylesheet" href="style/header.css" />
+    <link rel="stylesheet" href="style/footer.css" />
+  </head>
+  <body>
+    <%- include('partials/header') %>
+    <main class="content">
+      <section class="myCart">
+        <div class="tableCart">
+          <h2>Meu carrinho</h2>
+          <table id="myProducts">
+            <tr class="tr1">
+              <th>Produto</th>
+              <th>Qtd.</th>
+              <th>Preço</th>
+            </tr>
+            <tr class="tr2">
+              <td class="tdprod">
+                <img
+              src="/images/products-images/Smart Tv 43 UHD Samsung 4k 43AU7700.png"
+              alt="Smart Tv 43 polegadas UHD Samsung 4k 43AU7700"
+            />
+            Smart Tv 43" UHD Samsung 4k 43AU7700 Processador Crystal 4k Tela
+              Sem Limites Alexa Built In Controle Único
+              </td>
+              <td>
+                <input id=qtdInput type=number min=0 max=100>
+              </td>
+              <td class="tdprice">R$ 2.399,99</td>
+            </tr>
+          </table>
+          <div class="shippingBox">
+            <h4>Calcular frete e prazo</h4>
+            <div class="cepBox">
+              <form class="calcshipping">
+                <input
+                  class="calcshipping"
+                  type="search"
+                  placeholder="Digite o CEP"
+                  name="search"
+                />
+              </form>
+              <button class="searchCep" type="submit">OK</button>
+            </div>
+          </div>
+        <div class="addToCart">
+          <h3>Resumo do pedido</h3>
+          <table class="add">
+            <tr class="tr3">
+              <th>1 Unidade</th>
+              <td>R$ 2.399,99</td>
+            </tr>
+            <tr class="tr4">
+              <th>Frete</th>
+              <td> x </td>
+            </tr>
+            <tr class="tr5">
+              <th>Total</th>
+              <td>R$ 2.399,99</td>
+            </tr>
+          </table>
+          <div class="addProdBox">
+            <button class="addButton">Adicionar ao Carrinho</button>
+            <h5><a href="#">Continuar Comprando</a></h5>
+          </div>
+        </div>
+      </section>
+    </main>
+    <%- include('partials/footer') %>
+  </body>
+</html>
