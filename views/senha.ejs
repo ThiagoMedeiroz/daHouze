@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('partials/head') %>
+    <link rel="stylesheet" href="style/cadastro.css">
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/footer.css">
+<body>
+    <%- include('partials/header') %>
+    <div class="cadastro">
+        <div class="NSC">
+           <p>Recuperar senha</p>
+         </div>
+         <form class="form" action="/" method="POST">
+             <div class="email2">
+               <label for="email"></label>
+               <input type="email" id="email" placeholder="E-mail" name="email">
+             </div>
+             <div class="email2">
+               <label for="email"></label>
+               <input type="email" id="email" placeholder="Confirmar E-mail" name="email">
+             </div>
+             
+           <button class="CC" type="submit">Enviar E-mail para recuperar senha</button>
+</body>
+</html>
