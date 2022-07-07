@@ -76,6 +76,159 @@ h2{
 
   object-fit: contain;
   padding: 1rem;
+
+  border: 1px solid var(--shadow);
+  border-radius: 0.4rem;
+  filter: drop-shadow(0 0.5rem 0.5rem var(--divisor));
 }
 
+.prodBuy{
+  background-color: var(--shadow);
+  border-radius: 0.4rem;
+}
 
+.shippingBox{
+  background-color: var(--button-text);
+  border: 1px solid var(--shadow);
+  border-radius: 0.4rem;
+}
+
+button.buy{
+  background: var(--button-background);
+
+  border: none;
+  border-radius: 1rem;
+
+  width: 15rem;
+  height: 4rem;
+  
+
+  color: var(--button-text);
+  font-family: 'Roboto';
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-align: center;
+  filter: drop-shadow(0 0.5rem 0.5rem var(--divisor));
+}
+
+form.calcshipping{
+  display: flex;
+
+  background: var(--button-text);
+  border: 1px solid var(--shadow);
+  border-radius: 0.5rem;
+
+  padding: 0.5rem;
+}
+
+.cepBox{
+  display: flex;
+  flex-direction: row;
+
+  margin-bottom: 1.5rem;
+}
+
+button.searchCep{
+  border: 1px solid var(--button-background);
+  background-color: var(--button-text);
+  border-radius: 0.5rem;
+
+  font-family: 'Kanit';
+  color: var(--button-background);
+
+  margin-left: 1.5rem;
+  padding-inline: 0.5rem;
+}
+
+h3{
+  font-family: 'Kanit';
+  font-size: 2.5rem;
+  color: var(--border-text);
+}
+
+h4{
+  font-family: 'Kanit';
+  font-size: 1.2rem;
+  color: var(--border-text);
+}
+
+p.p1{
+  font-family: 'Kanit';
+  font-size: 1.6rem;
+  color: var(--border-text);
+}
+
+p.p2{
+  font-family: 'Kanit';
+  font-size: 1rem;
+  color: var(--border-text);
+
+}
+
+.p2 img{
+  max-height: 1.6rem;
+  width: auto;
+}
+
+h5{
+  font-family: 'Kanit';
+  font-size: 1.6rem;
+  color: var(--border-text);
+
+  border-bottom: 1px solid var(--shadow);
+}
+
+table{
+  font-family: 'Kanit';
+  font-size: 1.4rem;
+  text-align: left;
+
+  width: 100%;
+
+  margin-bottom: 1.5rem;
+}
+
+tr:nth-child(odd){
+  background-color: var(--shadow);
+}
+
+/* styles*/
+
+main.content{
+  margin-inline: 1.5rem;
+}
+
+.prodBuy{
+  margin: 1.5rem;
+  padding: 1.5rem;
+}
+
+.p2{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+h3, p, h4{
+  padding-bottom: 1.5rem;
+}
+
+h5{
+  margin-bottom: 1.5rem;
+}
+
+.shippingBox{
+  padding: 1.5rem;
+}
+
+.buyBox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 1.5rem;  
+}
+
+td, th{
+  padding-left: 0.5rem;
+}
